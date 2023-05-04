@@ -1,11 +1,11 @@
 package com.company;
-
+import java.util.Scanner;
 public class CalcularIva {
     public static void main(String[] args) {
-        // El iva es el 21%
-        System.out.println(calcularIva(10));
-        System.out.println(calcularIva(100));
-        System.out.println(calcularIva(1000));
+        Scanner scanner = new Scanner(System.in);
+        double precio = scanner.nextInt();
+
+        System.out.println(calcularIva(precio));
     }
     public static double calcularIva(double precio){
         double iva = 0.21;
