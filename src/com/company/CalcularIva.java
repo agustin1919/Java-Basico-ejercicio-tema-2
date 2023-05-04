@@ -10,9 +10,7 @@ public class CalcularIva {
     public static double calcularIva(double precio){
         double iva = 0.21;
         double totalIva = precio * iva;
-        double precioConIva = totalIva + precio;
+        return totalIva + precio;
 
-
-        return precioConIva;
     }
 }
